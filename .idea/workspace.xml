@@ -18,6 +18,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -226,11 +227,15 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1583415461976" />
-    <state x="296" y="93" key="SettingsEditor" timestamp="1583411046485">
+    <state x="296" y="93" key="SettingsEditor" timestamp="1583496414535">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="296" y="93" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583411046485" />
+    <state x="296" y="93" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583496414535" />
     <state x="296" y="109" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1583311858091" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1583496680080">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1583496680080" />
     <state x="399" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1583474083573">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
