@@ -1,0 +1,103 @@
+Python :  Learning
+
+1. List :         Nums = [12,23,11,10,8]
+
+    >>> Nums[0]
+    12
+    # maintain the index and sequence of the data.
+
+>>> Nums[2:]
+11,10,8
+
+# specified the position of index to get.
+
+>>> Nums[-5]
+12
+  # use negative number also for index start from last and comes to starting position  last index starts from -1 to Len
+
+>>> names= [‘sunil’,211,’jon’]
+# List can be of different type
+
+>>> mil = [Nums,names]
+# mil is type of list of lists , Combination of two diff type of list
+
+# insert and append methods of list
+Insert you can use the index number and control the position or index of element to be added . And append always add at the end of the list.
+
+# num.remove(12 ) # for delete the element
+
+# POP : nums.pop(1) will remove index at 1 element. If only using num.pop() will remove the last added element last first out
+
+# del nums[2:]
+12,23
+
+# nums.extend([44,33,66])
+
+# min(nums) , max sum
+
+# nums.sorts()
+Sort in acs order
+
+2. Set  & Tuple :
+
+#Tuple collection when you don’t want to change the value or fixed value
+Round bracket define the tuple.
+
+>>> tup = (11,22,33)
+
+>>> tup(1)
+11
+
+# set {} bracket for set
+# never follow sequence
+
+>>> s = {11,22,33,44}
+>>>s
+22,11,33,44
+
+>>> s = {11,22,33,44,44}
+>>>s
+11,22,33,44
+# duplicate element repeat only ones.
+# indexing is not supported and thats can’t fetch the according to index.
+
+3. Dictionary in Python is an unordered collection of data values, used to store data values like a map, which unlike other Data Types that hold only single value as an element, Dictionary holds key:value pair. Key value is provided in the dictionary to make it more optimized.
+# similarly as map define collection {key ,value} pair
+
+>>>data = {1:'test',2:'rock',3:'jack'}
+>>>Data[1]
+Test
+
+>>> data.get(1)
+test
+>>>data.get(1,'not found')
+test
+# we can alternate string value for the value if the value is not present.
+>>>
+data.get(6,'not present value')
+not present value
+
+>>> keys =['a','b','c']
+>>> values =['Argentina','Bombay','Canada']
+>>>data= dict(zip(key, values))
+{'a','Argentina','b':'Bombay','c':'Canada'}
+
+# add in dictionary  >>> data[‘d’]=‘delhi’
+
+>>> data
+{'a':'Argentina','b':'Bombay','c':'Canada','d',:'delhi'}
+
+## Nested dictionary with list also and check how we fetch the individual element from nested dictionary
+
+# here example of language and their respective IDE check below:-
+
+>>> prog = {'JS' : 'atom', 'CS' : 'VS' , 'Python' : ['Pycharm' , 'Sublime'] , 'JAVA' : { 'JSE' : 'Netbeans' , 'JEE' : 'Eclipse'}}
+
+# To fetch the data according to key :
+prog['JS']
+prog['Python']
+prog['Python'][1]  # WE can mention the index as well for fetching
+prog['JAVA']['JEE']
+
+
+
