@@ -1,0 +1,285 @@
+
+Python :  Learning
+---------------------------------------------------
+
+1. List :         Nums = [12,23,11,10,8]
+
+    >>> Nums[0]
+    12
+    # maintain the index and sequence of the data.
+
+>>> Nums[2:]
+11,10,8
+
+# specified the position of index to get.
+
+>>> Nums[-5]
+12
+  # use negative number also for index start from last and comes to starting position  last index starts from -1 to Len
+
+>>> names= ['sunil',211,'jon']
+# List can be of different type
+
+>>> mil = [Nums,names]
+# mil is type of list of lists , Combination of two diff type of list
+
+# insert and append methods of list
+Insert you can use the index number and control the position or index of element to be added . And append always add at the end of the list.
+
+# num.remove(12 ) # for delete the element
+
+# POP : nums.pop(1) will remove index at 1 element. If only using num.pop() will remove the last added element last first out
+
+# del nums[2:]
+12,23
+
+# nums.extend([44,33,66])
+
+# min(nums) , max sum
+
+# nums.sorts()
+Sort in acs order
+
+2. Set  & Tuple :
+
+#Tuple collection when you don’t want to change the value or fixed value
+Round bracket define the tuple.
+
+>>> tup = (11,22,33)
+
+>>> tup(1)
+11
+
+# set {} bracket for set
+# never follow sequence
+
+>>> s = {11,22,33,44}
+>>>s
+22,11,33,44
+
+>>> s = {11,22,33,44,44}
+>>>s
+11,22,33,44
+# duplicate element repeat only ones.
+# indexing is not supported and thats can’t fetch the according to index.
+
+3. Dictionary in Python is an unordered collection of data values, used to store data values like a map, which unlike other Data Types that hold only single value as an element, Dictionary holds key:value pair. Key value is provided in the dictionary to make it more optimized.
+# similarly as map define collection {key ,value} pair
+
+>>>data = {1:'test',2:'rock',3:'jack'}
+>>>Data[1]
+Test
+
+>>> data.get(1)
+test
+>>>data.get(1,'not found')
+test
+# we can alternate string value for the value if the value is not present.
+>>>
+data.get(6,'not present value')
+not present value
+
+>>> keys =['a','b','c']
+>>> values =['Argentina','Bombay','Canada']
+>>>data= dict(zip(key, values))
+{'a','Argentina','b':'Bombay','c':'Canada'}
+
+# add in dictionary  >>> data[‘d’]=‘delhi’
+
+>>> data
+{'a':'Argentina','b':'Bombay','c':'Canada','d',:'delhi'}
+
+## Nested dictionary with list also and check how we fetch the individual element from nested dictionary
+
+# here example of language and their respective IDE check below:-
+
+>>> prog = {'JS' : 'atom', 'CS' : 'VS' , 'Python' : ['Pycharm' , 'Sublime'] , 'JAVA' : { 'JSE' : 'Netbeans' , 'JEE' : 'Eclipse'}}
+
+# To fetch the data according to key :
+prog['JS']
+prog['Python']
+prog['Python'][1]  # WE can mention the index as well for fetching
+prog['JAVA']['JEE']
+
+-----------
+* Data types in  Python
+
+Listed below :-
+1. None
+2. Numeric
+3. List
+4. Tuple
+5. Set
+6. String
+7. Range
+8. Dictionary
+
+Numeric Type :  we have  int, flot, complex, bool
+Sequence Type : we have List, Tuple, Set, String, Range
+Mapping Type : we have  Dictionary
+
+
+
+# type : method to check the variable type :
+>>> varName=12
+ >>> type(varName)
+
+ # Complex type
+ num = 6 +9j
+
+ # Casting types:
+ a=5.6
+ b=int(a)
+ >>b
+ 5
+ c=flot(a)
+ >>> c
+ 5.0
+
+ k=6
+ com=complex(b,k)
+ >>> com
+ 5+6j that is complex number
+
+ #  bool  type (Boolean)
+
+ a=1
+ b=2
+
+c= b > a
+>>> c
+True
+
+type(c)
+>>> bool
+
+# Range Type :
+
+range(10)
+
+list(range(10)
+>>> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+list(range(2,10))
+>>> [2, 4, 6, 8]
+
+# Dictionary Type :
+
+d= {'sunil':'redmi','manish':'iphone','saurabh':'iphone','anish':'onePlus','arjun':'onePlus','amit':'oppo'}
+
+d.keys()
+>>> dict_keys(['sunil', 'manish', 'saurabh', 'anish', 'arjun', 'amit'])
+
+d.values()
+>>> dict_values(['redmi', 'iphone', 'iphone', 'onePlus', 'onePlus', 'oppo'])
+
+# fetch the value :
+ method 1.
+
+ d['saurabh']
+>>> iphone
+
+method 2.
+
+d.get('sunil')
+ >>> redmi
+ -----------------------
+
+ # Operators :
+
+ Arithmetic sort cut
+  x= 2
+  x += 2
+  >>> x = 4
+
+  x *=3
+
+  # assign teo variable at same time :
+  a,b=2,3
+
+  # assign negative value :
+
+n=7
+-n
+>>> -7
+n = -n
+>>> -7
+
+Logical  Operators :
+
+And Or Not
+
+a,b = 2,3
+
+a > 1 and b < 1
+>>> false
+
+a > 1 or b < 1
+>>> true
+
+# NOT
+
+x = True
+not x
+>>> false
+
+---------------------------
+# For Else :
+
+nums =[11,22,33,44,55]
+for num in nums:
+    if num % 5 == 0
+        print(num)
+        break
+else:
+    print()
+
+# must need to use the break with for else
+
+# Arrary :
+
+from array import *
+
+vals = array('i',[1,2,3,4,5])
+
+# need to mention letter like here i represent the signed int and capital I for the Unsigned.
+# b for char , l for long,  d double , f for float
+
+print(vals.buffer_info())
+# buffer provide address
+# type code , append , reverse , len  other methods
+
+print(vals[0])
+
+# use loop for print all value of array:
+
+for i in range(5):
+    print(vals[i])
+
+    for e in vals:
+        print(e)
+
+# create the array fro other array
+ newArray = array(vals.typecode,(a for a in vals) )
+for e in newArray:
+    print(e)
+
+# modify the value while creating the new array fro old array
+
+newArray = array(vals.typecode,(a+a for a in vals) )
+for e in newArray:
+    print(e)
+
+
+
+
+
+
+
+
+
+
+
+
+
