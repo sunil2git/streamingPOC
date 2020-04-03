@@ -271,6 +271,70 @@ newArray = array(vals.typecode,(a+a for a in vals) )
 for e in newArray:
     print(e)
 
+# Python Function can return multiple value :
+
+def add_sub(x,y):
+    c=x+y
+    b=x-y
+    return c,b
+
+res1,res2= add_sub(3,2)
+print("res1 = ",res1,"res2 = ",res2)
+
+-----------------------------
+# Types of Arguments :
+  1. postions
+  2. keyWords
+  3. default
+  4. variable length
+
+def person(name,age):
+    print(name)
+    print(age)
+
+person('sunil',28)
+# postion of parameter should be be same as funtion
+
+
+def person(name,age):
+    print(name)
+    print(age)
+person(age=28,name='sunil')
+# here we mention the keyWords like age and name so postion is not matter
+
+def person(name,age=18):
+    print(name)
+    print(age)
+person(name="sunil")
+
+# here are passing default argument in age
+
+# variable length arguments:
+
+def sum(a,*b):
+    c=a
+
+    for i in b:
+        c=c+i
+    print(c)
+
+sum(1,2,3,4)
+
+# *b return as tuple so we need to fetch one by one value from tuple and add it  then return.
+
+----------------------------
+# Global Variable :
+
+a=10
+b=20
+def something():
+    a=15
+    print("In fun global var a: ",globals()['a'])
+    print("In fun local var a: ",a)
+something()
+
+# we can access the global variable using globals()[] which give you all, for access individual we need mention the name of variable
+
 
 
 
